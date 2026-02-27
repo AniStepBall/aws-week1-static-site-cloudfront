@@ -75,25 +75,3 @@ aws-week1-static-site/
 **CloudFront distribution stuck in "In Progress"**
 → Wait up to 15 minutes. It is propagating to edge locations globally.
 
----
-
-## Screenshots
-_(Add later)_
-- [ ] S3 Block Public Access settinfs
-- [ ] CloudFront distribution summary
-- [ ] Live site loading via HTTPS in browser
-- [ ] Budget alert configuration
-
----
-
-## Next Steps (Week 2+)
-- [ ] Custom domain via Route 53
-- [ ] SSL certificate via AWS Certificate Manager (ACM)
-- [ ] GitHub Actions CI/CD for auto-deploy on push
-- [ ] Terraform to provision the same architecture as IaC
-
----
-
-## Author
-**Tolulope Lawal**
-AWS SAA-C03 Study Journey | [GitHub Profile](https://github.com/yourusername)
