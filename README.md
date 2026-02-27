@@ -8,24 +8,12 @@ This project is part of a AWS Solution Architect Associate (SAA-C03) study plan 
 ---
 
 ## Architecture Overview
+![Architecture](./architecture.png)
 ```
-User (Browser)
-     │
-     ▼ HTTPS only
-┌─────────────────┐
-│   CloudFront    │  ← CDN, TLS termination, caching
-│  Distribution   │
-└────────┬────────┘
-         │ Private origin (OAC)
-         ▼
-┌─────────────────┐
-│   S3 Bucket     │  ← Private, encrypted, Block Public Access ON
-│  (Static Files) │
-└─────────────────┘
-
 IAM: Least-privilege user (no AdministratorAccess)
 Billing: AWS Budget alert at $10 threshold
 ```
+
 
 ---
 
@@ -86,3 +74,26 @@ aws-week1-static-site/
 
 **CloudFront distribution stuck in "In Progress"**
 → Wait up to 15 minutes. It is propagating to edge locations globally.
+
+---
+
+## Screenshots
+_(Add later)_
+- [ ] S3 Block Public Access settinfs
+- [ ] CloudFront distribution summary
+- [ ] Live site loading via HTTPS in browser
+- [ ] Budget alert configuration
+
+---
+
+## Next Steps (Week 2+)
+- [ ] Custom domain via Route 53
+- [ ] SSL certificate via AWS Certificate Manager (ACM)
+- [ ] GitHub Actions CI/CD for auto-deploy on push
+- [ ] Terraform to provision the same architecture as IaC
+
+---
+
+## Author
+**Tolulope Lawal**
+AWS SAA-C03 Study Journey | [GitHub Profile](https://github.com/yourusername)
